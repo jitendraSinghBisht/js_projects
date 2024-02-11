@@ -1,0 +1,39 @@
+body{
+    background-color: #3b3b3b;
+    color: #efefef;
+    margin: 0;
+    padding: 5px;
+}
+
+h1{
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8vh;
+}
+
+h1 > span {
+    background-color: #2e2e2e;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btns{
+    margin-top: 50vh;
+    border-radius: 40px;
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    gap: 5vh;
+}
+
+button{
+    margin: 5px;
+    cursor: pointer;
+    border: solid 1px white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 3vh;
+    color: #efefef;
+}
