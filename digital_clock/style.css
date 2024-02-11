@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #353535;
+}
+
+.cent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+    margin-top: 20vh;
+    background-color: #97b8d3;
+    text-align: center;
+    border-radius: 40px;
+    overflow: scroll;
+}
+
+.banner h1{
+    margin: 3vh;
+    font-size: 10vh;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+.clock{
+    background-color: brown;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.num{
+    margin: 1vh;
+    height: 37vh;
+    width: 23vh;
+    background-color: brown;
+    position: relative;
+}
+
+.colon{
+    padding-top: 10vh;
+    background-color: brown;
+    position: relative;
+    height: 30vh;
+}
+.colon img{
+    width: 70%;
+    z-index: 100;
+}
+
+.seg{
+    padding: 0.9em;
+    height: 15vh;
+}
+.seg-hz{
+    transform: rotate(90deg);
+}
+.seg img{
+    height: 100%;
+}
+
+.num .seg-a{
+    position: absolute;
+    top: -3.5em;
+    left: 4.7em;
+}
+.num .seg-b{
+    position: absolute;
+    top: 1.2em;
+    left: 9.4em;
+}
+.num .seg-c{
+    position: absolute;
+    top: 10.4em;
+    left: 9.4em;
+}
+.num .seg-d{
+    position: absolute;
+    top: 15em;
+    left: 4.7em;
+}
+.num .seg-e{
+    position: absolute;
+    top: 10.4em;
+    left: 0;
+}
+.num .seg-f{
+    position: absolute;
+    top: 1.2em;
+    left: 0;
+}
+.num .seg-g{
+    position: absolute;
+    left: 4.7em;
+    top: 5.8em;
+}
+
+.num0 .seg-g{
+    opacity: 15%;
+}
+.num1 .seg-g,.num1 .seg-a,.num1 .seg-d,.num1 .seg-e,.num1 .seg-f{
+    opacity: 15%;
+}
+.num2 .seg-c,.num2 .seg-f{
+    opacity: 15%;
+}
+.num3 .seg-e,.num3 .seg-f{
+    opacity: 15%;
+}
+.num4 .seg-a,.num4 .seg-e,.num4 .seg-d{
+    opacity: 15%;
+}
+.num5 .seg-e,.num5 .seg-b{
+    opacity: 15%;
+}
+.num6 .seg-b{
+    opacity: 15%;
+}
+.num7 .seg-e,.num7 .seg-f,.num7 .seg-g,.num7 .seg-d{
+    opacity: 15%;
+}
+.num8{}
+.num9 .seg-e{
+    opacity: 15%;
+}
