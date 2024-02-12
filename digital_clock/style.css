@@ -5,22 +5,28 @@ body{
 }
 
 .cent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner{
-    margin-top: 20vh;
-    background-color: #97b8d3;
-    text-align: center;
-    border-radius: 40px;
     overflow: scroll;
 }
 
+.fix{
+    height: max-content;
+    width: max-content;
+    padding: 2rem;
+    margin: 10rem;
+}
+
+.banner{
+    width: 100em;
+    height: 34.5em;
+    background-color: #97b8d3;
+    text-align: center;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
 .banner h1{
-    margin: 3vh;
-    font-size: 10vh;
+    margin: 0.8rem;
+    font-size: 7rem;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
 }
 
@@ -32,18 +38,17 @@ body{
 }
 
 .num{
-    margin: 1vh;
-    height: 37vh;
-    width: 23vh;
+    margin: 0.5rem;
+    height: 22.5rem;
+    width: 14rem;
     background-color: brown;
     position: relative;
 }
 
 .colon{
-    padding-top: 10vh;
-    background-color: brown;
+    padding-top: 5rem;
     position: relative;
-    height: 30vh;
+    height: 18rem;
 }
 .colon img{
     width: 70%;
@@ -51,50 +56,51 @@ body{
 }
 
 .seg{
-    padding: 0.9em;
-    height: 15vh;
+    padding: 0.9rem;
+    height: 9rem;
 }
 .seg-hz{
     transform: rotate(90deg);
 }
 .seg img{
+    width: 100%;
     height: 100%;
 }
 
 .num .seg-a{
     position: absolute;
-    top: -3.5em;
-    left: 4.7em;
+    top: -3.5rem;
+    left: 4.7rem;
 }
 .num .seg-b{
     position: absolute;
-    top: 1.2em;
-    left: 9.4em;
+    top: 1.2rem;
+    left: 9.4rem;
 }
 .num .seg-c{
     position: absolute;
-    top: 10.4em;
-    left: 9.4em;
+    top: 10.4rem;
+    left: 9.4rem;
 }
 .num .seg-d{
     position: absolute;
-    top: 15em;
-    left: 4.7em;
+    top: 15rem;
+    left: 4.7rem;
 }
 .num .seg-e{
     position: absolute;
-    top: 10.4em;
+    top: 10.4rem;
     left: 0;
 }
 .num .seg-f{
     position: absolute;
-    top: 1.2em;
+    top: 1.2rem;
     left: 0;
 }
 .num .seg-g{
     position: absolute;
-    left: 4.7em;
-    top: 5.8em;
+    left: 4.7rem;
+    top: 5.8rem;
 }
 
 .num0 .seg-g{

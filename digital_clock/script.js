@@ -1,5 +1,3 @@
-alert(`This page is not responsive.\nPlease view this page in 1920×768 resolution.\nWill improve in near future sorry for inconvineance.\n\nThank You....`);
-
 function getTime() {
     let d=new Date()
     setTime(d.getSeconds(),'sec')
