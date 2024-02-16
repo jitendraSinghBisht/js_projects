@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Fun</title>
+</head>
+<body>
+    <div class="cent">
+        <div class="heading">
+            <h1>Update CSS Variables With <span>JS</span></h1>
+            <p>Play with padding, width, blur and bg-color of the image div..</p>
+        </div>
+        <div class="container">
+                <div>
+                    <label for="Padding">Padding</label><br>
+                    <input id="pd" type="range" min="0" max="10" title="Padding" value="1">
+                </div>
+                <div>
+                    <label for="Width">Width</label><br>
+                    <input id="wd" type="range" min="25" max="110" title="Width" value="30">
+                </div>
+                <div>
+                    <label for="Blur">Blur</label><br>
+                    <input id="blur" type="range" min="0" max="50" title="Blur" value="0">
+                </div>
+                <div>
+                    <label for="Bg-Color">Background Color</label><br>
+                    <input id="clr" type="color" title="Bg-Color" value="#ffe4c4">
+                </div>
+        </div>
+        <div class="imgContainer">
+            <img src="../assets/images/car.jpg" alt="">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
