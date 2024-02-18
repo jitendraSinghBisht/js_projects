@@ -1,0 +1,60 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #414141;
+}
+
+.cent{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading{
+    text-align: center;
+    font-family: sans-serif;
+    color: bisque;
+}
+
+.heading h1{
+    margin: 0;
+    font-size: 4rem;
+}
+.heading p{
+    margin:  0 0 3rem 0;
+    font-size: 1.6rem;
+}
+
+.gallary{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 75%;
+}
+
+.images{
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+    margin: 0 0.8rem;
+    border-radius: 5rem;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid whitesmoke;
+}
+.images:hover{
+    width: 80%;
+}
+
+.images h1, .images p{
+    visibility: hidden;
+}
