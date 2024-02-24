@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fun with cursor</title>
+</head>
+<body>
+    <div class="cent">
+        <div class="followers">
+            <div class="circle"></div>
+        </div>
+        <div class="heading">
+            <h1>Fun With Cursor</h1>
+            <p>Change cursor and cursor follower...</p>
+        </div>
+        <div class="menu">
+            <div>
+                <label for="size-input">Size follower</label><br>
+                <input type="range" title="size-input" id="size-input" min="10" max="100" value="20">
+            </div>
+
+            <fieldset>
+                <legend>Select a follower:</legend>
+              
+                <div>
+                  <input type="radio" id="follower1" class="follower" name="follower-shape" value="circle" checked />
+                  <label for="follower1">Follower1</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="follower2" class="follower" name="follower-shape" value="triangle" />
+                  <label for="follower2">Follower2</label>
+                </div>
+                
+                <div>
+                  <input type="radio" id="follower3" class="follower" name="follower-shape" value="pacman" />
+                  <label for="follower3">Follower3</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select a cursor icon:</legend>
+              
+                <div>
+                  <input type="radio" id="icon1" class="cursor" name="cursor-icon" value="../assets/images/cursor1.png" checked />
+                  <label for="icon1">Icon1</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="icon2" class="cursor" name="cursor-icon" value="../assets/images/cursor2.png" />
+                  <label for="icon2">Icon2</label>
+                </div>
+                
+                <div>
+                  <input type="radio" id="icon3" class="cursor" name="cursor-icon" value="../assets/images/cursor3.png" />
+                  <label for="icon3">Icon3</label>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

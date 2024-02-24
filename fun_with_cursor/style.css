@@ -1,0 +1,88 @@
+*{
+    cursor: var(--cursor);
+}
+:root{
+    --x: 50%;
+    --y: 50%;
+    --size: 20px;
+    --cursor: url(../assets/images/cursor1.png), auto;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #242424;
+}
+
+.cent{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading{
+    text-align: center;
+    font-family: sans-serif;
+    color: bisque;
+}
+
+.heading h1{
+    margin: 0;
+    font-size: 4rem;
+}
+.heading p{
+    margin:  0 0 5rem 0;
+    font-size: 1.6rem;
+}
+
+.menu{
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    background-color: #f7c1c8;
+    display: flex;
+    gap: 5rem;
+}
+
+.followers{
+    position: fixed;
+    left: var(--x);
+    top: var(--y);
+    transition: 0.1s;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+.circle {
+    width: var(--size);
+    height: var(--size);
+    background: red;
+    border-radius: 50%;
+  }
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: calc(var(--size) * 2) solid red;
+}
+.pacman {
+    object-fit: contain;
+    width: 0px;
+    height: 0px;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid red;
+    border-left: var(--size) solid red;
+    border-bottom: var(--size) solid red;
+    border-top-left-radius: var(--size);
+    border-top-right-radius: var(--size);
+    border-bottom-left-radius: var(--size);
+    border-bottom-right-radius: var(--size);
+  }

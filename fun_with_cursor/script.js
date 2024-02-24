@@ -1,5 +1,8 @@
 const root = document.querySelector(`:root`)
 const size = document.querySelector(`#size-input`)
+const cursors = document.querySelectorAll(`.cursor`)
+const followers = document.querySelectorAll(`.follower`)
+const pfollower = document.querySelector(`.followers div`)
 
 function follow(e){
     root.style.setProperty(`--x`,`${e.x}px`)
@@ -16,3 +19,12 @@ size.addEventListener('change',(e)=>{
     console.log(e.target.value)
     root.style.setProperty(`--size`,`${e.target.value}px`)
 })
+
+cursors.forEach((cursor)=> cursor.addEventListener('change',(e)=>{
+    root.style.setProperty(`--cursor`,`url(${e.target.value}), auto`);
+}))
+
+
+followers.forEach((follower)=> follower.addEventListener('change',(e)=>{
+    pfollower.className = e.target.value;
+}))
