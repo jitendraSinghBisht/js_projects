@@ -13,7 +13,22 @@
             <p>Play with padding, width, blur and bg-color of the image div..</p>
         </div>
         <div class="container">
-            <video src="../assets/videos/Sunflower.mp4" controls></video>
+            <video src="../assets/videos/Sunflower.mp4"></video>
+            <div class="controls">
+                <div class="overlay-div">
+                    <div class="overlay-controls" id="pause"><img src="../assets/images/video_controls/pause.png" alt=""></div>
+                    <div class="overlay-controls" id="play"><img src="../assets/images/video_controls/play.png" alt=""></div>
+                </div>
+                <div class="volume-container">
+                    <div class="overlay-div">
+                        <div class="overlay-controls" id="noaudio"><img src="../assets/images/video_controls/noaudio.png" alt=""></div>
+                        <div class="overlay-controls" id="mute"><img src="../assets/images/video_controls/mute.png" alt=""></div>
+                        <div class="overlay-controls" id="lowaudio"><img src="../assets/images/video_controls/lowaudio.png" alt=""></div>
+                        <div class="overlay-controls" id="audio"><img src="../assets/images/video_controls/audio.png" alt=""></div>
+                    </div>
+                    <input type="range" name="" id="volume" title="volume" value="100" min="0" max="100">
+                </div>
+            </div>
         </div>
     </div>
 </body>
