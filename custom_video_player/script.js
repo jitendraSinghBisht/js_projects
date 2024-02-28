@@ -6,6 +6,7 @@ const lowaudio = document.querySelector('#lowaudio')
 const noaudio = document.querySelector('#noaudio')
 const mute = document.querySelector('#mute')
 const volume = document.querySelector('input[type="range"]')
+const seeker = document.querySelector('.seeker div')
 
 play.addEventListener('click',()=>{
     pause.style.zIndex='1'
@@ -65,6 +66,10 @@ video.addEventListener('click',()=>{
         pause.style.zIndex='-1'
     }
 })
+
+video.addEventListener('playing',()=>(setInterval(()=>{
+    seeker.style.width = `${((video.currentTime/video.duration)*100).toFixed()}%`
+}),1000))
 
 video.addEventListener('pause',(()=>{
     pause.style.zIndex='-1'
