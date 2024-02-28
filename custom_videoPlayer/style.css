@@ -67,7 +67,12 @@ html,body{
     align-items: center;
     justify-content: center;
 }
-
+/* .seeker div{
+    background-color: aquamarine;
+    width: 90%;
+    height: 1%;
+    z-index: 10;
+} */
 
 /********** Range Input Styles **********/
 /*Range Reset*/
