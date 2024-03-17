@@ -1,11 +1,22 @@
-var pl=0;
-var count=0;
-const ar={1:"",2:"",3:"",4:"",5:"",6:"",7:"",8:"",9:""};
-var a=["_","td1","td2","td3","td4","td5","td6","td7","td8","td9"];
-let doc=document.querySelectorAll(".button");
+let pl=0;
+let count=0;
+var p1,p2;
+let ar={1:"",2:"",3:"",4:"",5:"",6:"",7:"",8:"",9:""};
+let a=["_","td1","td2","td3","td4","td5","td6","td7","td8","td9"];
+const doc=document.querySelectorAll(".button");
+let winbox = document.querySelector(".winbox");
+const players = document.querySelectorAll('.usersin input');
+
+document.querySelector(".usersin button").addEventListener('click',(e)=>{
+    p1=players[0].value;
+    p2=players[1].value;
+    if(p1!="" && p2!="" && p1!=null && p2!=null ){
+        e.target.parentElement.style.height = '0';
+        console.log(p1,p2,e.target.parentElement)
+    }
+});
 
 doc.forEach((dc,i)=> {
-    let idx = { pos: i+1};
     dc.addEventListener('click',clk)
 })
 
@@ -50,10 +61,25 @@ function check(){
 
 function result(res){
     stop_button(1,1);
+    let st;
     if(res=="win"){
-        let st="Player"+(pl+1)+" Won!!!\nStart a new game??";
-        if(confirm(st)) location.reload(true);
+        st=(pl==0?p1:p2)+" Won!!!\nStart a new game??";
     } else {
-        if(confirm("Match Draw....\nStart a new game??")) location.reload(true);
+        st="Match Draw....\nStart a new game??";
     }
+    winbox.style.height = 'Inherit';
+    winbox.children[0].innerText = st;
+    document.querySelector(".winbox button").addEventListener('click',reset);
+}
+
+function reset(e){
+    pl=0;
+    count=0;
+    ar={1:"",2:"",3:"",4:"",5:"",6:"",7:"",8:"",9:""};
+    a=["_","td1","td2","td3","td4","td5","td6","td7","td8","td9"];
+    doc.forEach((dc,i)=> {
+        dc.addEventListener('click',clk)
+        dc.style.backgroundImage = 'none';
+    })
+    e.target.parentElement.style.height = '0';
 }
